@@ -1,8 +1,8 @@
 import React from 'react';
 import { Viewer, Entity } from 'resium';
-import { Cesium, Ion, Cartesian3 } from 'cesium';
+import { Cesium, Ion, IonResource, Cartesian3 } from 'cesium';
 Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkODRlMTkwZi05MGFhLTRhZjUtOWMxOS1mYzg5ZGNlNmU5NzUiLCJpZCI6MTQ3NDY3LCJpYXQiOjE2ODY5ODc5Njh9.ocqrF8LGorgwl7rdSyTxivtOLhON8QdRHoU1CxIleg0";
-const resource = await Cesium.IonResource.fromAssetId(1908976);
+const resource = await IonResource.fromAssetId(1908976);
 
 const My3DModel = () => {
   return (
