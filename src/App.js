@@ -1,24 +1,21 @@
-import { Viewer, Entity, PointGraphics } from "resium";
-import { Model, Transforms, Cartesian3 } from "cesium";
+import React from 'react';
+import { Viewer, Entity } from 'resium';
+import { Cesium, Ion, Cartesian3 } from 'cesium';
+Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkODRlMTkwZi05MGFhLTRhZjUtOWMxOS1mYzg5ZGNlNmU5NzUiLCJpZCI6MTQ3NDY3LCJpYXQiOjE2ODY5ODc5Njh9.ocqrF8LGorgwl7rdSyTxivtOLhON8QdRHoU1CxIleg0";
+const resource = await Cesium.IonResource.fromAssetId(1908976);
 
-const origin = Cartesian3.fromDegrees(-95.0, 40.0, 200000.0);
-const cameraDest = Cartesian3.fromDegrees(-95.0, 40.0, 210000);
-const modelMatrix = Transforms.eastNorthUpToFixedFrame(origin);
-
-function App() {
+const My3DModel = () => {
   return (
-    <Viewer full>
-      {/* <Entity position={position} name="Tokyo" description="Hello, world.">
-        <PointGraphics pixelSize={10} />
-      </Entity> */}
-      <Model>
-25      url="Cesium_Air.glb"
-26      modelMatrix={modelMatrix}
-27      minimumPixelSize={128}
-28      maximumScale={20000}
-31    </Model>
+    <Viewer>
+      <Entity
+        position={Cartesian3.fromDegrees(-75.59777, 40.03883, 0)}
+        model={{
+          uri: resource,
+          scale: 10000,
+        }}
+      />
     </Viewer>
   );
-}
+};
 
-export default App;
+export default My3DModel;
