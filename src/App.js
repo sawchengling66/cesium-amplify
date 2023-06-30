@@ -10,7 +10,7 @@ const My3DModel = () => {
       <Entity
         position={Cartesian3.fromDegrees(-75.59777, 40.03883, 0)}
         model={{
-          uri: resource,
+          uri: "public/Cesium_Air.glb",
           scale: 10000,
         }}
       />
