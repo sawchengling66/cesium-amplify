@@ -8,10 +8,10 @@ const My3DModel = () => {
   return (
     <Viewer>
       <Entity
-        position={Cartesian3.fromDegrees(-75.59777, 40.03883, 0)}
+        position={Cartesian3.fromDegrees(-75.59777, 40.03883, 1000)}
         model={{
-          uri: "public/Cesium_Air.glb",
-          scale: 10000,
+          uri: resource,
+          scale: 100,
         }}
       />
     </Viewer>

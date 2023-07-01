@@ -3,22 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^5.0.3",
+    "@aws-sdk/client-location": "^3.363.0",
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aws-amplify": "^5.3.3",
     "cesium": "^1.106.1",
     "craco-cesium": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-map-gl": "^7.1.0",
     "react-scripts": "5.0.1",
     "resium": "^1.16.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start", 
-    "build": "craco build", 
-    "test": "craco test", 
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
